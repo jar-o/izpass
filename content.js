@@ -28,6 +28,8 @@ function passwordPickHandler(e) {
     return true;
 }
 
+// Fires on programmatic "focus" of password field. SHOULD return focus to the
+// originally focused element, if any.
 function passwordFocusHandler(e) {
     if (e.target.type && e.target.type === 'password') {
         e.target.style.backgroundColor = '#FF69B4';
