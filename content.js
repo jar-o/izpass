@@ -35,7 +35,8 @@ function passwordFocusHandler(e) {
     }
 }
 
-
+// Single handler, note that we call this from both places above, which appears
+// to be necessary.
 function passwordHandler(e) {
     e.value='wutwut';
     e.style.backgroundColor = '#FF69B4';
